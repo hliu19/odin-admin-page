@@ -1,1 +1,1 @@
-# odin-admin-page
+# Admin Page Exercise (The Odin Project)
