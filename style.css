@@ -1,0 +1,104 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 20% auto;
+    grid-template-rows: 20% 80%;
+    background-color: antiquewhite;
+    height: 100vh;
+}
+
+nav {
+    padding: 20px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: aqua;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    background-color: blueviolet;
+}
+
+article {
+    background-color: burlywood;
+}
+
+.header-top, .header-bottom {
+    height: 50%;
+}
+
+.header-top {
+    background-color: azure;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 50% 50%;
+    height: calc(100% - 40px);
+    padding: 20px;
+}
+
+.projects {
+    background-color: chartreuse;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.announcements {
+    background-color: coral;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.trending {
+    background-color: darkcyan;
+}
+
+.project-container, .announcements-container, .trending-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    height: calc(100% - 20px);
+    justify-content: stretch;
+    flex: 1;
+}
+
+.project-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 10px;
+    column-gap: 10px;
+    height: 100%;
+}
+
+.announcements-list, .trending-list {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: stretch;
+    gap: 5px;
+}
+
+.card {
+    flex: 1;
+    border: 1px solid black;
+    background-color: aquamarine;
+}
